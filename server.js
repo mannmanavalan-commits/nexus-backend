@@ -91,17 +91,4 @@ process.on('SIGTERM', () => {
     console.log('HTTP server closed');
   });
 });
-```
 
----
-
-**What changed:**
-- Removed OpenAI and replaced it with **Google Gemini**
-- Everything else stays exactly the same ✅
-
----
-
-**Now also update your `.env` file** — open it and make sure it looks like this:
-```
-GEMINI_API_KEY=paste_your_gemini_api_key_here
-PORT=3001
