@@ -8,7 +8,7 @@ console.log('API Key loaded:', process.env.GEMINI_API_KEY ? 'Yes ✅' : 'No ❌'
 
 const app = express();
 const PORT = process.env.PORT || 3001;
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
+const genAI = new GoogleGenerativeAI('AIzaSyAfliwOlP3J0xtGjbWcNT43dyx8lBs6kFA');
 
 app.use(cors({ origin: '*', credentials: false }));
 app.use(express.json({ limit: '10mb' }));
